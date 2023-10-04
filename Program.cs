@@ -1,34 +1,5 @@
 ﻿//Adrian Rozsahegyi NET23
 
-
-// OBS ADRIAN LÄS!!
-// Del av uppgiften som jag inte förstår frågan
-// Det ska finnas en konstruktor som kan användas för att skapa nya djur. ???
-// Finns konstruktorer men jag förstår ej frågan
-
-
-// Vad du ska göra
-//Tänk dig att du ska skapa en grund för ett program som hanterar djur på ett zoo.
-
-//- [x] Det ska finnas en basklass som heter `Animal`
-//    - [x] Klassen ska ha minst fem egenskaper som alla djur delar med varandra.
-//    - [x] Klassen ska också ha minst tre metoder som alla djur delar med varandra.
-//- [x] Du ska skapa minst tre olika djur som ärver från klassen Animal.
-//    - [x] Dessa djur ska implementera minst en ny egenskap vardera och minst en ny metod vardera.
-//    - [???] Dessa djur ska också ha defaultvärden för egenskaperna, både de som sätts i klassen och de som sätts i basklassen.
-//    - [x] Alla djur måste ha en metod som heter `makeSound()` och som ska skriva ut djurets läte i konsollen.
-//    - [??????] Det ska finnas en konstruktor som kan användas för att skapa nya djur.
-//- [x] Ett av djuren du skapat ovan ska du sedan dela upp i två nya klasser som ärver från det djuret.
-//    - [x] Exempelvis kanske du har hund och då kan du skapa Bulldog och Chihuahua. Resultatet blir arv i två nivåer.
-//    - [x] Dessa djurvarianter ska också implementera någon unik egenskap och någon unik metod eller i alla fall en överlagring som gör dem unika.
-//- [x] I din Main-metod ska du initiera ett flertal olika djur och se till att de gör sina ljud så det syns i konsollen att djuren har låtit.
-
-// Extra utmaningar
-//- [x]  Gör så att även människa finns som ett djur.
-//- [x] Utöka strukturen så att det görs skillnad på däggdjur och reptiler.
-//- [x] Utöka programmet så att det även finns en uppdelning mellan vilda och tama djur.
-//- [x] Utöka programmet så att strukturen även omfattar växter.
-
 using System.Threading.Channels;
 
 namespace Inheritance
@@ -53,6 +24,10 @@ namespace Inheritance
             buster.MakeSound();
             sparkle.MakeSound();
             ekans.MakeSound();
+
+
+            Human rolf = new Human();
+            rolf.DestroyWorld();
 
         }
     }
